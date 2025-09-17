@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="header-section">
+      <div class="title"> Create New Consultation</div>
+      <button class="btn" (click)="backtoconsultationlist()" >Back</button>
+    
+    </div>
+  
+    <div class="body-section">
+      <div class="search-section">
+        <div class="left-side-search-section">
+         
+  
+          <div class="day">
+            <label>Day:</label>
+            <input type="day" id="date" placeholder="Enter Consultation Day" required name="day" [(ngModel)]="consultation.day">
+            
+          </div>
+          <div class="docid">
+            <label>Doctor Id:</label>
+            <input type="  docname" id="docname" placeholder="Enter Consultation DoctorId" required name="  docname" [(ngModel)]="consultation.doc_id">
+            
+          </div>
+          <div class="docname">
+            <label>Doctor Name:</label>
+            <input type="docname" id="start_time" placeholder="Enter Consultation Doctor" required name="start_time"  [(ngModel)]="consultation.docname">
+        </div>
+          
+        </div>
+        <div class="right-side-search-section">
+         
+  
+            <div class="session">
+                <label>Session:</label>
+                <input type="session" id="session" placeholder="Enter Consultation Session" required name="session" [(ngModel)]="consultation.session">
+                
+              </div>
+            
+            <div class="start">
+                <label>Start Time:</label>
+                <input type="time" id="start_time" placeholder="Enter Consultation Time" required name="start_time"  [(ngModel)]="consultation.start_time">
+            </div>
+            <div class="end">
+                <label>End Time:</label>
+                <input type="time" id="end_time" placeholder="Enter Consultation Time" required name="start_time"  [(ngModel)]="consultation.end_time">
+            </div>
+       
+       
+       
+       
+       
+                </div>
+        </div>
+          
+             
+     
+        
+      </div>
+  
+      <div class="content-section">
+        <button class="create-btn"  (click)="createconsultation()">Create</button>
+    
+      
+          
+      </div>
+    </div>
+  
+    

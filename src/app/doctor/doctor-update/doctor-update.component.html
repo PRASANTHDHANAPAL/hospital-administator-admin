@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="header-section">
+      <div class="title"> Update Doctor</div>
+      <button class="btn" (click)="backtodoctorlist()" >Back</button>
+    
+    </div>
+  
+    <div class="body-section">
+      <div class="search-section">
+        <div class="left-side-search-section">
+          <div class="name">
+            <label>Name:</label>
+            <input type="name" id="name"  [(ngModel)]="doctor.docname"  required name="name">
+            
+          </div>
+  
+          <div class="DOB">
+            <label>DOB:</label>
+            <input type="DOB" id="DOB"   [(ngModel)]="doctor.dob"  required name="DOB">
+            
+          </div>
+          <div class="address">
+            <label>Address:</label>
+            <input type="address" id="address"  [(ngModel)]="doctor.address"  required name="address">
+            
+          </div>
+          <div class="education">
+            <label>Education:</label>
+            <input type="education" id="education"  [(ngModel)]="doctor.education"  required name="education">
+            
+          </div>
+        </div>
+        <div class="right-side-search-section">
+
+            <div class="speciality">
+                <label>Speciality:</label>
+                <input type="speacialty" id="speacialty"   [(ngModel)]="doctor.specalist"  required name="speacialty">
+                
+              </div>
+
+          <div class="emailId">
+            <label>Email:</label>
+            <input type="email" id="email" [(ngModel)]="doctor.docemailId" required  name="email">
+            
+          </div>
+  
+            
+              <div class="phone">
+                <label>Phone no:</label>
+                <input type="phone" id="phone"  [(ngModel)]="doctor.phonenumber"  required name="phone">
+                
+              </div>
+          
+  
+        </div>
+        
+      </div>
+  
+      <div class="content-section">
+        <button class="create-btn" (click)="updatedoctor(doctor.doc_id)" >Update Doctor </button>
+    
+      
+          
+      </div>
+    </div>
+  
+    

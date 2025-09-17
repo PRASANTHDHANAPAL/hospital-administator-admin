@@ -1,0 +1,57 @@
+@import 'ngx-toastr/toastr';
+
+@font-face {
+  font-family: "Gellix-Regular";
+  src: url("../src/assets/Gellix-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gellix-Regular", sans-serif !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Gellix-Regular", sans-serif !important;
+}
+
+.toast-container {
+  padding-top: 17%;
+  left: 87%;
+  transform: translateX(-50%);
+}
+
+.toast-success {
+  background-color: black !important;
+  color: #fff !important;
+
+}
+
+.toast-error {
+  background-color: black !important;
+  color: #fff !important;
+
+
+  transform: translateX(-150%);
+
+}
+
+.toast-doc {
+  background-color: black !important;
+  color: #fff !important;
+
+
+  transform: translateX(-150%);
+
+}
+
+.toast-msg {
+  transform: translateX(-200%);
+}

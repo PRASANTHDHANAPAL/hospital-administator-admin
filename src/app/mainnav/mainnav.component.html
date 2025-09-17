@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="sidebar">
+    
+    <h2>Admin X</h2>
+        <hr>
+        <div>
+          <h1> Hospital X Management</h1>
+        </div>
+        <hr>
+        <h3>Menu</h3>
+        <div id="menu">
+       
+         <a (click)="onmenu(1)">Admin</a>
+         <a (click)="onmenu(2)">Doctor</a>
+         <a (click)="onmenu(3)">Subscriber</a>
+         <a (click)="onmenu(4)">Apppointment</a>
+         <a (click)="onmenu(5)">Consultation</a>
+         <hr>
+         <a (click)="onmenu"  (click)="onlogout()">Logut</a>
+       </div>
+      </div>
+    
+    <div class="main-section">
+      <router-outlet name="mainnav"></router-outlet>
+    </div>
+  </div>

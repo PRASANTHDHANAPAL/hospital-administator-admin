@@ -1,0 +1,79 @@
+<div class="container">
+    <div class="header-section">
+      <div class="title">Doctor Profile</div>
+      <button class="btn" (click)="onaddoctor()">Add Doctor</button>
+      <button class="btn-2" (click)="onlogout()">Logout</button>
+    </div>
+  
+    <div class="body-section">
+      <div class="search-section">
+        <div class="left-side-search-section">
+          <div class="emailId-search">
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="Enter Email to search" required  name="searchText"
+            [(ngModel)]="searchText"
+            (ngModelChange)="onSearchTextChange()">
+            
+          </div>
+  
+          <div class="name-search">
+            <label>Name :</label>
+            <input type="text" id="name" placeholder="Enter Name to search" required name="docname"
+            [(ngModel)]="docnamesearch"
+            (ngModelChange)="onSearchdocname()">
+            
+          </div>
+          <div class="Specialist-search">
+            <label>Specialist:</label>
+            <input type="specalist" id="specalist" placeholder="Enter specialisation to search" required name="specalist"
+            [(ngModel)]="specalist"
+            (ngModelChange)="onSearchspecialist()">
+            
+          </div>
+        </div>
+        <div class="right-side-search-section">
+
+  
+        </div>
+      </div>
+  
+      <div class="content-section">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Education</th>
+        <th>Specialist</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Consultation</th>
+        <th>Update</th>
+            </tr>
+          </thead>
+          <tbody>
+         
+            <tr *ngFor="let doctor of doctors" >
+              <td>{{ doctor.doc_id }}</td>
+              <td>{{ doctor.docname }}</td>
+              <td>{{ doctor.dob }}</td>
+              <td>{{ doctor.education }}</td>
+              <td>{{ doctor.specalist }}</td>
+              <td>{{ doctor.docemailId }}</td>
+              <td>{{ doctor.address }}</td>
+              <td>{{ doctor.phonenumber}}</td>
+              <td><button class="create-con" (click)="onupdateconsultations(doctor.doc_id)">Update</button></td>
+              <td><button class="edit-button" (click)="oneditdoctor(doctor.doc_id)">Edit</button></td>
+            </tr>
+          </tbody>
+        </table>
+    
+      
+          
+      </div>
+    </div>
+  
+    <div class="footer-section"></div>
+  </div>

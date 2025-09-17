@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="header-section">
+      <div class="title">Subscriber Profile</div>
+      <button class="btn" (click)="gotoadduser()">Add Subscriber</button>
+      <button class="btn-2"  (click)="onlogout()">Logout</button>
+    </div>
+  
+    <div class="body-section">
+      <div class="search-section">
+        <div class="left-side-search-section">
+          <div class="emailId-search">
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="Enter Email to search" required name="UserEmailSearch"
+            [(ngModel)]="UserEmailSearch"
+            (ngModelChange)="onSearchUserEmail()">
+            
+          </div>
+  
+          <div class="mobileno-search">
+            <label>Phone No:</label>
+            <input type="phone" id="phone" placeholder="Enter Phone to search" required name="UsearchPhoneSearch"
+            [(ngModel)]="UsearchPhoneSearch"
+            (ngModelChange)="onSearchUserPhone()">
+            
+          </div>
+          <div class="name-search">
+            <label>Name:</label>
+            <input type="name" id="name" placeholder="Enter name to search" required name="UserNameSearch"
+            [(ngModel)]="UserNameSearch"
+            (ngModelChange)="onSearchUserName()">
+            
+          </div>
+        </div>
+        <div class="right-side-search-section">
+
+  
+        </div>
+      </div>
+  
+      <div class="content-section">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              
+                <th>Name</th>
+                <th>Date of Birth</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Book Appointment</th>
+                <th>Update</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.dob }}</td>
+                <td>{{ user.address }}</td>
+                <td>{{ user.emailId }}</td>
+                <td>{{ user.phone }}</td>
+                <td><button class="bookappointment-btn" (click)="bookappointment(user.id)">Click here to book appointment</button></td>
+               
+              <td><button class="edit-button" (click)="onedituser(user.id)" >Edit</button></td>
+            </tr>
+          </tbody>
+        </table>
+    
+      
+          
+      </div>
+    </div>
+  
+    <div class="footer-section"></div>
+  </div>

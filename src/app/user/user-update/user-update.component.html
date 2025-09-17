@@ -1,0 +1,57 @@
+
+<div class="container">
+    <div class="header-section">
+      <div class="title">Update Subscriber</div>
+      <button class="btn" (click)="backtouserlist()" >Back</button>
+    
+    </div>
+  
+    <div class="body-section">
+      <div class="search-section">
+        
+        <div class="left-side-search-section">
+          <div class="name">
+            <label>Name:</label>
+            <input type="text" id="name"   [(ngModel)]="user.name"  name="name">
+            
+          </div>
+  
+          <div class="DOB">
+            <label>DOB:</label>
+            <input type="DOB" id="DOB" [(ngModel)]="user.dob"  name="DOB">
+            
+          </div>
+          <div class="address">
+            <label>Address:</label>
+            <input type="address" id="address" [(ngModel)]="user.address"  name="address">
+            
+          </div>
+        </div>
+        <div class="right-side-search-section">
+          <div class="emailId">
+            <label>Email:</label>
+            <input type="email" id="email" [(ngModel)]="user.emailId" name="email">
+            
+          </div>
+  
+             
+              <div class="phone">
+                <label>Phone no:</label>
+                <input type="phone" id="phone" [(ngModel)]="user.phone" name="phone">
+                
+              </div>
+          
+  
+        </div>
+        
+      </div>
+  
+      <div class="content-section">
+        <button class="create-btn" (click)="updateuser(user.id)" >Update  Subscriber</button>
+    
+      
+          
+      </div>
+    </div>
+  
+    

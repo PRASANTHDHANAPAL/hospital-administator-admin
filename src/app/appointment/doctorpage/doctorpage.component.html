@@ -1,0 +1,28 @@
+<div class="container">
+<section class="doclist">
+    <div class="title"> Select Doctor</div>
+    <div class="name-search">
+       
+        <input type="text" id="name" placeholder="Enter Name to search" required name="docname"
+        [(ngModel)]="docnamesearch"
+        (ngModelChange)="onSearchdocname()">
+        
+      </div>
+    <div class="doctor-container">
+        <div class="position">
+    <div class="doctor-list ">
+     
+      
+        <div *ngFor="let doctor of doctors" class="box">
+            <img [src]="doctor.imageUrl || (imageUrl + doctor.doc_id + '.jpg')" >
+            <h3>{{ doctor.docname }}</h3>
+            <p>{{ doctor.specalist }} Doctor</p>
+            <button (click)="  selectDoctor(doctor.doc_id)">Appointment</button>
+          </div>
+         
+          
+    </div>
+</div>
+</div>
+</section>
+</div>

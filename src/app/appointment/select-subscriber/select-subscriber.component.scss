@@ -1,0 +1,82 @@
+
+.title{
+    font-weight: bolder;
+   color: white;
+    font-size: 50px;
+    margin-left: 35%;
+    margin-top: 40px;
+    
+}.scroll {
+    margin-top: 60px;
+    overflow-y: auto;
+    max-height: 70vh; 
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.subscriber-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+
+}
+
+.box {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px; 
+    background-color: white;
+}
+
+.select {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.select:hover {
+    background-color:black;
+    color: white;
+}
+.name{
+    font-size: 15px;
+    font-weight: bold;
+    color:grey;
+}
+
+.emailId-search{padding-top: 70px;
+    margin-left: 70px;
+    
+}
+.emailId-search input{
+    width: 30%;
+    height: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    color:black ;
+}
+.emailId-search input::placeholder {
+    color:black;
+    padding-left: 3px;
+}
+.emailId-search label {
+
+    margin-right: 20px; 
+    padding-right: 34px;
+    font-size: 18px;
+    color:white ;
+}

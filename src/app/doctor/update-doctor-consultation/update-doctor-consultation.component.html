@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="header-section">
+      <div class="title"> Update Consultation For Doctor</div>
+      
+    
+    </div>
+    <body>
+     
+   <main class="table">
+    <div class="table-container">
+    <section class="table-body">
+     
+      <table>
+        <thead>
+          <tr>
+           <!-- <th><input class="docId" placeholder="Doc Id" readonly></th>
+           <th><input class="docname" placeholder="Doctor Name" readonly></th> -->
+           <th><input class =con-id  placeholder="con-id" readonly></th>
+            <th><input class="id-day" placeholder="Day" readonly></th>
+            <th><input class="id-session" placeholder="Session" readonly></th>
+            <th><input class="id-st" placeholder="Start" readonly></th>
+            <th><input class="id-et" placeholder="End" readonly></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of formData">
+            <!-- <td> <input  class=" id "type="text"[(ngModel)]="doctor.doc_id "readonly></td>
+            <td> <input  class="doctor"  type="text"[(ngModel)]="doctor.docname" readonly ></td> -->
+            <td><input class ="con" type="text"   [(ngModel)]="item.con_id"  readonly></td>
+            <td> <input class="day" type="text" [(ngModel)]="item.day" readonly></td>
+            <td><input class="session" type="text" [(ngModel)]="item.session" readonly></td>
+            <td><input class="st-time"  type="time" [(ngModel)]="item.start_time"></td>
+            <td><input  class="et-time"  type="time" [(ngModel)]="item.end_time"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+</main>
+
+<button class="consultation-btn"  (click)="onupdate(doctor.con_id)" >Update</button>
+</body>
+
+</div>

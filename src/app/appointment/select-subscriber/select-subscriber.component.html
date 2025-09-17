@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+    <div class="title">
+        Select Subscriber
+    </div>
+    <div class="emailId-search">
+   
+        <input type="email" id="email" placeholder="Search User" required name="UserEmailSearch"
+        [(ngModel)]="UserEmailSearch"
+        (ngModelChange)="onSearchUserEmail()">
+        
+      </div>
+    <section>
+    <div class="scroll">
+        <div class="sticky">
+            <div class="subscriber-container">
+             
+                <div *ngFor="let user of users" class="box">
+                    <h3 class="name">{{ user.name }}</h3>
+                    <p>{{ user.dob }}</p>
+                    <p>{{ user.emailId }}</p>
+                    <button class="select" (click)=" onselectSubscriber(user.id)"  >Select</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

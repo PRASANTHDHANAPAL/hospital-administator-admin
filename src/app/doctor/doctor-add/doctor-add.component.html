@@ -1,0 +1,78 @@
+<div class="container">
+    <div class="header-section">
+      <div class="title"> Create New Doctor</div>
+      <button class="btn" (click)="backtodoctorlist()" >Back</button>
+    
+    </div>
+  
+    <div class="body-section">
+      <div class="search-section">
+        <div class="left-side-search-section">
+          <div class="name">
+            <label>Name:</label>
+            <input type="name" id="name" placeholder="Enter doctor name" required name="name" [(ngModel)]="formData.docname">
+            
+          </div>
+  
+          <div class="DOB">
+            <label>DOB:</label>
+            <input type="date" id="DOB" placeholder="Enter doctor DOB" required name="DOB" [(ngModel)]="formData.dob">
+            
+          </div>
+          <div class="address">
+            <label>Address:</label>
+            <input type="address" id="address" placeholder="Enter doctor address" required name="address" [(ngModel)]="formData.address">
+            
+          </div>
+          <div class="education">
+            <label>Education:</label>
+            <input type="education" id="education" placeholder="Enter doctor education" required name="education" [(ngModel)]="formData.education">
+            
+          </div>
+          <div class="photo"  >
+            <label class="styled-file-input">
+              Photo:
+          </label>
+            <input type="file" id="photo" placeholder="Enter doctor photo" required name="photo"  (change)="onFileSelected($event)" class="styled-file-input">
+            
+          </div>
+        </div>
+        <div class="right-side-search-section">
+
+            <div class="speciality">
+                <label>Speciality:</label>
+                <input type="speacialty" id="speacialty" placeholder="Enter doctor Speacialty" required name="speacialty" [(ngModel)]="formData.specalist">
+                
+              </div>
+
+          <div class="emailId">
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="Enter your EmailID" required name="email" [(ngModel)]="formData.docemailId">
+            
+          </div>
+  
+              <div class="password">
+                <label>Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required name="password" [(ngModel)]="formData.docpassword">
+                
+              </div>
+              <div class="phone">
+                <label>Phone no:</label>
+                <input type="phone" id="phone" placeholder="Enter your phone no" required name="phone" [(ngModel)]="formData.phonenumber">
+                
+              </div>
+          
+  
+        </div>
+        
+      </div>
+  
+      <div class="content-section">
+        <button class="create-btn"  (click)="createDoctor()"  >Create</button>
+    
+      
+          
+      </div>
+    </div>
+  
+    

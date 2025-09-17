@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+}
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-family: poppins, sans-seif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-section {
+  flex: 0.5;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  padding: 10px;
+}
+.header-section .btn {
+  height: 40px;
+  width: 150px;
+  margin-top: 19px;
+  margin-right: 20px;
+}
+.header-section .btn-2 {
+  height: 40px;
+  width: 150px;
+  margin-top: 19px;
+}
+.btn:hover {
+  background-color: #333;
+  color: white;
+}
+.btn-2:hover {
+  background-color: #333;
+  color: white;
+}
+.btn {
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  box-sizing: border-box;
+  font-size: 50px;
+  font-weight: bolder;
+
+  color: white;
+  font-style: none;
+
+  padding-bottom: 0px;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+body {
+  background: transparent, center, cover;
+}
+
+main.table {
+  margin-top: 35px;
+  width: 75vw;
+  height: 75vh;
+  background-color: #fff5;
+  backdrop-filter: (7px);
+
+  border-radius: 0.8rem;
+}
+
+input.id-head {
+  margin-top: 20px;
+
+  width: 70%;
+  outline: none;
+  border: none;
+  height: 40px;
+  background: rgba(6, 6, 6, 0.816);
+  border: none;
+  outline: none;
+
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 18px;
+  color: white;
+}
+input.Day-head {
+  margin-top: 20px;
+  margin-bottom: 50%;
+  margin-left: 400%;
+  width: 100%;
+  height: 40px;
+  background: rgba(6, 6, 6, 0.816);
+  border: none;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 40px;
+  color: white;
+}
+input.Day2-head {
+  margin-top: 120px;
+  margin-bottom: 30%;
+  margin-left: 400%;
+  width: 100%;
+  height: 40px;
+  background: rgba(6, 6, 6, 0.816);
+  border: none;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 40px;
+  color: white;
+}
+input.Day3-head {
+  margin-top: 120px;
+  margin-bottom: 30%;
+  margin-left: 400%;
+  width: 100%;
+  height: 40px;
+  background: rgba(6, 6, 6, 0.816);
+  border: none;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 30px;
+  color: white;
+}
+.Day4-head {
+  margin-top: 30px;
+  margin-bottom: 30%;
+  margin-left: 400%;
+  width: 100%;
+  height: 40px;
+
+  border: none;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 30px;
+  color: white;
+}
+
+input.docId {
+  margin-top: 20px;
+  width: 60%;
+  height: 40px;
+  background: rgba(6, 6, 6, 0.816);
+  border: none;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+  color: white;
+}
+input.docname {
+  margin-top: 20px;
+  width: 60%;
+  height: 40px;
+  background: rgba(6, 6, 6, 0.816);
+  border: none;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 30px;
+  color: white;
+}
+
+input.id-session {
+  margin-top: 20px;
+  width: 80%;
+  height: 40px;
+  background: rgba(6, 6, 6, 0.816);
+  border: none;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 70px;
+  color: white;
+}
+input.con-id {
+  margin-top: 10px;
+  width: 80%;
+  height: 40px;
+  background: rgba(6, 6, 6, 0.816);
+  border: none;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 30px;
+  color: white;
+}
+input.id-day {
+  margin-top: 20px;
+  width: 80%;
+  height: 40px;
+  background: rgba(6, 6, 6, 0.816);
+  border: none;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 80px;
+  color: white;
+}
+input.id-st {
+  margin-top: 20px;
+  width: 50%;
+  height: 40px;
+  background: rgba(6, 6, 6, 0.816);
+  border: none;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 40px;
+  color: white;
+}
+input.id-et {
+  margin-top: 20px;
+
+  width: 50%;
+  height: 40px;
+  background: rgba(6, 6, 6, 0.816);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 50px;
+  color: white;
+}
+input.id {
+  margin-top: 20px;
+  width: 60%;
+  height: 40px;
+  background: white;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding-left: 30px;
+  color: black;
+}
+input.doctor {
+  margin-top: 20px;
+  width: 60%;
+  height: 40px;
+  background: white;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding-left: 50px;
+  color: black;
+}
+input.con {
+  margin-top: 20px;
+  width: 80%;
+  height: 40px;
+  background: white;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding-left: 30px;
+  color: black;
+}
+input.day {
+  margin-top: 20px;
+  width: 80%;
+  height: 40px;
+  background: white;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding-left: 70px;
+  color: black;
+}
+// input.Wednesday{
+//     margin-top: 20px;
+//     width: 50%;
+//     height: 40px;
+//     background: white;
+//     border: none;
+//     outline: none;
+//     border: 2px solid rgba(255,255,255,.2);
+//     border-radius: 40px;
+//     font-size: 16px;
+//     padding-left: 17px;
+//     color:black ;
+
+// }
+input.session {
+  margin-top: 20px;
+  width: 60%;
+  height: 40px;
+  background: white;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding-left: 70px;
+  color: black;
+}
+
+input.st-time {
+  margin-top: 20px;
+  width: 50%;
+  height: 40px;
+  background: white;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding-left: 30px;
+  color: black;
+}
+input.et-time {
+  margin-top: 20px;
+  width: 50%;
+  height: 40px;
+  background: white;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  padding-left: 30px;
+  color: black;
+}
+
+.table {
+  width: 80%;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  width: 20%;
+  padding: 2px;
+  text-align: center;
+
+  // border: 1px solid #ddd;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: none;
+  background: none;
+}
+
+th:first-child,
+td:first-child {
+  width: 10%;
+}
+.consultation-btn {
+  padding: 15px;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  color: black;
+  width: 20%;
+}
+
+.consultation-btn {
+  background-color: black;
+  color: white;
+}
+.consultation-btn {
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+.table-container {
+  height: 75vh; /* Set the desired height */
+  overflow: auto;
+}
+input.id-head,
+input.docId,
+input.docname,
+input.id-session,
+input.id-day,
+input.id-st,
+input.id-et {
+  margin-bottom: 20px;
+}
+input.id,
+input.doctor,
+input.day,
+input.session,
+input.st-time,
+input.et-time {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="header-section">
+    <div class="title">Consultation</div>
+    <button class="btn"  (click)="  goToAddconsultation()">Add Consultation</button>
+    <button class="btn-2" (click)=" onlogout()">Logout</button>
+  </div>
+
+  <div class="body-section">
+    <div class="search-section">
+      <div class="left-side-search-section">
+        <div class="date-search">
+          <label>Time:</label>
+          <input type="time" id="date" placeholder="Enter Date to search" required name="ConsultationDateSearch"
+          [(ngModel)]="ConsultationDateSearch"
+          (ngModelChange)="onConsultationDateSearch()">
+          
+        </div>
+
+        <div class="day-search">
+          <label>Day:</label>
+          <input type="day" id="day" placeholder="Enter Day to search" required name="ConsultationDaySearch"
+          [(ngModel)]="ConsultationDaySearch"
+          (ngModelChange)="onConsultationDaySearch()">
+          
+        </div>
+        <div class="session-search">
+          <label>Session:</label>
+          <input type="session" id="session" placeholder="Enter Session to search" required name="ConsultationSessionSearch"
+          [(ngModel)]="ConsultationSessionSearch"
+          (ngModelChange)="onConsultationSessionSearch()">
+          
+        </div>
+      
+      </div>
+      <div class="right-side-search-section">
+        
+
+      </div>
+    </div>
+  
+      <div class="content-section">
+        <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Day</th>
+                <th>Doctor ID</th>
+                <th>Session Type</th>
+                <th>Starting Time</th>
+                <th>Ending Time</th>
+                <th>Update</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let consultation of consultations">
+                <td>{{ consultation.con_id }}</td>
+                <td>{{ consultation.day }}</td>
+                <td>{{ consultation.doctor.doc_id}}</td>
+                <td>{{ consultation.session }}</td>
+                <td>{{ consultation.start_time }}</td>
+                <td>{{ consultation.end_time }}</td>
+      
+                <td><button class="edit-button" (click)="oneditconsultation(consultation.con_id)">Edit</button></td>
+              </tr>
+            </tbody>
+          </table>
+          
+      </div>
+    </div>
+  
+    <div class="footer-section"></div>
+  </div> 
+ 

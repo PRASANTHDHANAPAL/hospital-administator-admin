@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="header-section">
+      <div class="title"> Update Appointment</div>
+      <button class="btn" (click)="backtoappointmentlist()" >Back</button>
+    
+    </div>
+  
+    <div class="body-section">
+      <div class="search-section">
+        <div class="left-side-search-section">
+          <div class="name">
+            <label>Name:</label>
+            <input type="name" id="name"  required name="name" [(ngModel)]="appointment.user.name">
+            
+          </div>
+  
+          <div class="DoctorId">
+            <label>Doctor ID:</label>
+            <input type="age" id="age"  required name="age" [(ngModel)]="appointment.consultaion.doc_id" readonly>
+            
+          </div>
+
+          <div class="Doctor">
+            <label>Doctor:</label>
+            <input type="text" id="text"  required name="age" [(ngModel)]="docname" readonly>
+            
+          </div>
+          <div class="Date">
+            <label>Date:</label>
+            <input type="text" id="doctor"  required name="doctor" [(ngModel)]="appointment.date ">
+            
+          </div>
+        </div>
+        <div class="right-side-search-section">
+          <div class="day">
+            <label>Day:</label>
+            <input type="text" id="date" required name="date"[(ngModel)]="appointment.consultaion.day" >
+            
+          </div>
+  
+              <div class="Session">
+                <label>Session:</label>
+                <input type="text" id="time"  required name="time"  [(ngModel)]="appointment.consultaion.session">
+                
+              </div>
+              <div class="Time">
+                <label>Time:</label>
+                <input type="time" id="phone"  required name="phone" [(ngModel)]="appointment.consultaion.start_time">
+                
+              </div>
+          
+             
+        </div>
+        
+      </div>
+  
+      <div class="content-section">
+        <button class="update-btn"  (click)="updateAppointment(appointment.id)">Update Appointment</button>
+    
+      
+          
+      </div>
+    </div>
+  
+    

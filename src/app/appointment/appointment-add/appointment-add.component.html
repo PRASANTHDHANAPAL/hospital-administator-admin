@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="header-section">
+      <div class="title"> Create New Appointment</div>
+      <button class="btn" (click)="backto()" >Back</button>
+    
+    </div>
+  
+    <div class="body-section">
+      <div class="search-section">
+        <div class="left-side-search-section">
+          <div class="name">
+            <label>Name:</label>
+            <input type="text" id="name"  required name="name" [(ngModel)]="user.name">
+            
+          </div>
+  
+          <div class="doctorID">
+            <label>Doctor ID:</label>
+            <input type="number" id="number"  required name="Doctor_ID" [(ngModel)]="doctor.doc_id">
+            
+          </div>
+          <div class="doctor">
+            <label>Doctor:</label>
+            <input type="doctor" id="doctor"  required name="doctor" [(ngModel)]="doctor.docname" readonly>
+            
+          </div>
+
+          <div class="date">
+            <label>Date:</label>
+            <input type="date" id="date"  required name="date" [(ngModel)]="formData.date"  (ngModelChange)="findDayOfWeek($event)">
+            
+          </div>
+        </div>
+        <div class="right-side-search-section">
+          <div class="day">
+            <label>Day:</label>
+            <input type="text" id="day" required name="day"[(ngModel)]="dayOfWeek" >
+            
+          </div>
+  
+              <!-- <div class="session">
+                <label>Session:</label>
+                <input type="text" id="session"required name="session"  [(ngModel)]="consultations[0].session">
+                
+              </div> -->
+
+              <div class="session">
+
+                <label>Session:</label>
+                <div class="session-buttons">
+                  <button 
+                  *ngFor="let session of sessions"
+      class="session-btn"
+      [ngClass]="{'selected': session === selectedSession}"
+      (click)="selectSession(session)"
+    >
+    {{ session | titlecase }}
+  </button>
+</div>
+              </div>
+
+
+              <div class="time"  *ngIf="filteredConsultation ">
+                <label>Time:</label>
+                <input type="time" id="time"  required name="time" [(ngModel)]="filteredConsultation.start_time">
+                
+              </div>
+          
+             
+        </div>
+        
+      </div>
+  
+      <div class="content-section">
+        <button class="create-btn"  (click)="createAppointment()">Create</button>
+    
+      
+          
+      </div>
+    </div>
+  
+    

@@ -1,0 +1,68 @@
+<div class="container">
+    <div class="header-section">
+      <div class="title"> Update Consultation</div>
+      <button class="btn" (click)="backtoconsultationlist()" >Back</button>
+    
+    </div>
+  
+    <div class="body-section">
+      <div class="search-section">
+        <div class="left-side-search-section">
+
+        
+  
+          <div class="day">
+            <label>Day:</label>
+            <input type="day" id="date"  required name="day" [(ngModel)]="consultation.day">
+            
+          </div>
+          <div class="docid">
+            <label>Doctor Id:</label>
+            <input type="  docname" id="doc_id"  required name="doc_id" [(ngModel)]="consultation.doctor.doc_id" readonly>
+            
+          </div>
+          <div class="docname">
+            <label>Doctor Name:</label>
+            <input type="docname" id="docname"  required name="docname"  [(ngModel)]="consultation.doctor.docname" readonly>
+        </div>
+          
+        </div>
+        <div class="right-side-search-section">
+         
+  
+            <div class="session">
+                <label>Session:</label>
+                <input type="session" id="session" required name="session" [(ngModel)]="consultation.session" >
+                
+              </div>
+            
+            <div class="start">
+                <label>Start Time:</label>
+                <input type="time" id="start_time"  required name="start_time"  [(ngModel)]="consultation.start_time">
+            </div>
+            <div class="end">
+                <label>End Time:</label>
+                <input type="time" id="end_time"  required name="end_time"  [(ngModel)]="consultation.end_time">
+            </div>
+       
+       
+       
+       
+       
+                </div>
+        </div>
+          
+             
+     
+        
+      </div>
+  
+      <div class="content-section">
+        <button class="create-btn"  (click)=" updateConsultation(consultation.con_id)">Update Consultation</button>
+    
+      
+          
+      </div>
+    </div>
+  
+    

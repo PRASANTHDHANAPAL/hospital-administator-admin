@@ -1,0 +1,78 @@
+<div class="container">
+    <div class="header-section">
+      <div class="title">Appointments</div>
+      <button class="btn" (click)="goToAddappoinment()" >Add Appointment</button>
+      <button class="btn-2"  (click)="onlogout()">Logout</button>
+    </div>
+  
+    <div class="body-section">
+      <div class="search-section">
+        <div class="left-side-search-section">
+          <div class="doctor-search">
+            <label>Doctor:</label>
+            <input type="doctor" id="age" placeholder="Enter Doctor to search" required name="AppointmentDoctorSearch"
+            [(ngModel)]="AppointmentDoctorSearch"
+            (ngModelChange)="onAppointmentDoctorSearch()">
+            
+          </div>
+  
+          <div class="date-search">
+            <label>Date:</label>
+            <input type="date" id="date" placeholder="Enter Date to search" required name="AppointmentDateSearch"
+            [(ngModel)]="AppointmentDateSearch"
+            (ngModelChange)="onAppointmentDateSearch()">
+            
+          </div>
+          <div class="name-search">
+            <label>Name:</label>
+            <input type="name" id="name" placeholder="Enter Name to search" required name="AppointmentNameSearch"
+            [(ngModel)]="AppointmentNameSearch"
+            (ngModelChange)="onAppointmentNameSearch()">
+            
+          </div>
+        
+        </div>
+        <div class="right-side-search-section">
+          
+  
+        </div>
+      </div>
+  
+      <div class="content-section">
+        <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Doctor</th>
+                <th>Date</th>
+                <th>Day</th>
+                <th>Session</th>
+                <th>Time</th>
+                <th>Status</th>
+                <th>Update</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let appointment of appointments">
+                <td>{{ appointment.id }}</td>
+                <td>{{ appointment.user.name }}</td>
+                <td>{{ appointment.consultaion.doctor.docname }}</td>
+                <td>{{ appointment.date }}</td>
+                <td>{{ appointment.consultaion.day}}</td>
+                <td>{{appointment.consultaion.session}}</td>
+                <td>{{appointment.consultaion.start_time}}</td>
+           
+               
+                <td><button class="status-btn"  >Booked</button></td>
+                <td><button class="edit-button" (click)="oneditappointment(appointment.id)">Edit</button></td>
+              </tr>
+            </tbody>
+          </table>
+      
+          
+      </div>
+    </div>
+  
+    <div class="footer-section"></div>
+  </div>
